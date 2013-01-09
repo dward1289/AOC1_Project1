@@ -23,8 +23,19 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-
+    //Integers for work hours and total appointments.
+    int appointments = 20;
+    int shiftHours = 8;
     
+    //Float to divide appointments by hours.
+    float total = (float)appointments/(float)shiftHours;
+    
+    //NSLog showing shiftHours, and appoinments.
+    NSLog(@"I have to work %d hours today.", shiftHours);
+    NSLog(@"There are %d appointments for the day.", appointments);
+    
+    //NSLog showing the total of appointments divided by shiftHours.
+    NSLog(@"Total breaks recommended from 20 appointments within 8 hours: %f breaks", total);
     
     
     return YES;
