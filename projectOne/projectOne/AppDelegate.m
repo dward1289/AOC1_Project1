@@ -1,7 +1,7 @@
 //
 //  AppDelegate.m
 //  projectOne
-//
+//  AOC1_1301
 //  Created by Devona Ward on 1/9/13.
 //  Copyright (c) 2013 Devona Ward. All rights reserved.
 //
@@ -85,6 +85,53 @@
     
     //Third task ended
     
+    //Fourth task: Perform a single for loop printing out values to the console.
+    
+    NSLog(@"I'm happy to have a team that will help me take a few appointments.");
+    NSLog(@"I will keep track of the appointments taken.");
+    
+    //Loop for every 5 appointments taken until 25 have been taken total.
+    for(int appts=5; appts <= 25; appts+=5)
+    {
+        NSLog(@"So far %d appointments have been taken.", appts);
+    }
+    
+    //Fourth task ended
+    
+    //Fifth task: Perform a nested loop printing out values to the console
+    
+    NSLog(@"Looks like business is starting to pick up.");
+    //Appointments are being made.
+    for(int apptsNew=2; apptsNew<= 6; apptsNew+=2)
+    {
+        NSLog(@"%d new appointments have been made.", apptsNew);
+        
+        //Repairs are being completed every 15 minutes.
+        for(int apptsDone=15; apptsDone>=0; apptsDone-=5)
+        {
+            NSLog(@"%d minutes until a repair is completed.", apptsDone);
+        }
+        NSLog(@"A repair has been completed");
+    }
+    
+    //Fifth task ended
+    
+    //Final task: Perform a while loop that increments an int variable and outputs to the console.
+    
+    int offTime = 60;
+    
+    while (offTime <= 100)
+    {
+        NSLog(@"I have %d minutes left until it's time to go home.", offTime);
+        offTime-=10;
+        if(offTime <= 0)
+        {
+            break;
+        }
+    }
+    NSLog(@"It has been a long day. Time to go home and relax.");
+    
+    //Final task ended
     
     return YES;
     
